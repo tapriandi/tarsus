@@ -19,6 +19,7 @@
             <b-dropdown-item href="" class="disabled">Lomba 2021</b-dropdown-item>
             <b-dropdown-item href="" class="disabled">Pawai Obor 2019</b-dropdown-item>
           </b-nav-item-dropdown>
+          <b-nav-item to="/blog/all" class="pl-lg-4">Blog</b-nav-item>
           <b-nav-item to="/about" class="pl-lg-4">Tentang</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -44,5 +45,8 @@
   }
   .dropdown-item {
     color: white;
+  }
+  .dropdown-item:hover, .dropdown-item:focus {
+    background: rgba(0, 224, 160, 0.7);
   }
 </style>

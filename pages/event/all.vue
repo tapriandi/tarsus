@@ -1,32 +1,29 @@
 <template>
-  <div class="blog-all">
+  <div class="event-all">
     <TheHeader />
 
     <!-- article -->
-    <div class="container py-5"> 
-      <h1 class="font-bold text-4xl p-5 text-center">Kegiatan</h1>
+    <div class="container py-5 my-5"> 
+      <h2 class="font-weight-bold p-5 text-center">Kegiatan Tarsus</h2>
 
       <ul class="d-flex flex-wrap justify-content-center">
-        <li
-          v-for="event of events"
-          :key="event.slug"
-          class="event-card"
-        >
+        <li v-for="event of events" :key="event.slug" class="event-card">
           <NuxtLink
             :to="{ name: 'event-slug', params: { slug: event.slug } }"
-            class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
           >
             <img
               v-if="event.img"
               :src="event.img"
+              class="rounded-sm"
             />
 
-            <div
-              class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
-            >
-              <h2 class="font-bold">{{ event.title }}</h2>
-              <p>by {{ event.author.name }}</p>
-              <p class="font-bold text-gray-600 text-sm">
+            <h3 class="title p-4 font-weight-bold">{{ event.title }}</h3>
+
+
+            <div class="float">
+              <h2 class="font-weight-bold">{{ event.title }}</h2>
+              <p>2020</p>
+              <p class="desc">
                 {{ event.description }}
               </p>
             </div>
@@ -57,7 +54,10 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
+.event-all {
+  min-height: 90vh;
+}
 
 ul {
   margin: 0;
@@ -66,14 +66,11 @@ ul {
 ul li {
   list-style: none;
 }
+
 .event-card {
-  border-radius: 8px;
+  position: relative;
   margin: 8px;
   max-width: 480px;
-}
-.event-card a {
-  background-color: #fff;
-  border-radius: 8px;
 }
 
 .event-card a:hover {
@@ -81,10 +78,11 @@ ul li {
 }
 
 .event-card a:hover img {
-  transform: scale(1.01);
+  transform: scale(1.005);
 }
 
 .event-card img {
+  position: relative;
   width: 100%;
   height: 320px;
   overflow: hidden;
@@ -93,7 +91,47 @@ ul li {
   object-position: center;
 }
 
-.event-card img div {
-  border-radius: 8px 0 0 8px;
+.event-card .float {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white !important;
+  transition: .5s;
+  background: rgba(83, 148, 253, 0.5);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-card .float:hover {
+  opacity: 1;
+}
+
+.event-card .float .desc {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-card .title {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  color: white;
+  transition: 0.5s;
+}
+
+.event-card .float:hover~ .title {
+  opacity: 0 !important;
+}
+
+@media (max-width: 380px) {
+  .event-card img {
+    height: 260px;
+  }
 }
 </style>

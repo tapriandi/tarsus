@@ -54,6 +54,9 @@
             unde eaque fugiat maiores est consectetur laboriosam fuga expedita
             quos!
           </p>
+          <p class="mb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, nam suscipit eius corporis cumque saepe reprehenderit exercitationem placeat eum consequuntur ipsam recusandae est possimus earum numquam ad! Hic, vel sed?
+          </p>
         
           <NuxtLink to="/about" class="py-4 link">Baca selanjutnya ></NuxtLink>
         </div>
@@ -185,7 +188,7 @@ body {
   overflow-x: hidden;
 }
 .homepage {
-  background-color: aliceblue;
+  background-color: rgba(194, 212, 255, 0.2);
 }
 ul {
   margin: 0;

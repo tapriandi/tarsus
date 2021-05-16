@@ -3,8 +3,8 @@
     <TheHeader />
 
     <!-- article -->
-    <div class="container">
-      <h1 class="font-bold text-4xl p-5 text-center">Artikel dan Berita</h1>
+    <div class="container py-5 my-5">
+      <h1 class="font-weight-bold p-5 text-center">Artikel dan Berita</h1>
 
       <ul class="d-flex flex-wrap justify-content-center">
         <li
@@ -14,22 +14,17 @@
         >
           <NuxtLink
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-            class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
           >
             <img
               v-if="article.img"
-              class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+              class="rounded-sm"
               :src="article.img"
             />
 
-            <div
-              class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
-            >
-              <h2 class="font-bold">{{ article.title }}</h2>
+            <div class="pb-3" >
+              <h4 class="py-3">{{ article.title }}</h4>
               <p>by {{ article.author.name }}</p>
-              <p class="font-bold text-gray-600 text-sm">
-                {{ article.description }}
-              </p>
+              <p>{{ article.description }}</p>
             </div>
           </NuxtLink>
         </li>
@@ -59,7 +54,9 @@ export default {
 
 
 <style scoped>
-
+.blog-all {
+  height: 90vh;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -67,14 +64,10 @@ ul {
 ul li {
   list-style: none;
 }
+
 .article-card {
-  border-radius: 8px;
   margin: 8px;
   max-width: 320px;
-}
-.article-card a {
-  background-color: #fff;
-  border-radius: 8px;
 }
 
 .article-card a:hover {
@@ -94,7 +87,14 @@ ul li {
   object-position: center;
 }
 
-.article-card img div {
-  border-radius: 8px 0 0 8px;
+.article-card p {
+  color: #212529;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
+
+.article-card h4 {
+  margin: 0;
+}
+
 </style>
