@@ -1,11 +1,13 @@
 <template>
   <footer>
-    <div class="container pb-4">
-      <div class="socials d-flex p-3 justify-content-center">
+    <div class="socials">
+      <div class="container d-flex p-3 justify-content-center">
         <b-nav-item to="/" class="px-lg-4">Instagram</b-nav-item>
         <b-nav-item to="/" class="px-lg-4">Facebook</b-nav-item>
         <b-nav-item to="/" class="px-lg-4">Youtube</b-nav-item>
       </div>
+    </div>
+    <div class="container py-3">
       <div
         class="d-flex px-2 flex-column flex-md-row align-items-center justify-content-md-between"
       >
@@ -18,17 +20,21 @@
 
 <style scoped>
 footer {
-  background: antiquewhite;
+  background: #2675f7;
+  color: white;
 }
 .container {
   padding: 0;
 }
 .socials {
-  background: #fde5c2;
+  background: #5393fd;
 }
 li {
   list-style: none;
   padding: 5px 0;
+}
+a {
+  color: white;
 }
 p {
   font-size: 12px;
