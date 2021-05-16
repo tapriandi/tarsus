@@ -13,7 +13,7 @@
           class="event-card"
         >
           <NuxtLink
-            :to="{ name: 'blog-slug', params: { slug: event.slug } }"
+            :to="{ name: 'event-slug', params: { slug: event.slug } }"
             class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
           >
             <img

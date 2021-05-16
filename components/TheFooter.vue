@@ -27,7 +27,7 @@ footer {
   padding: 0;
 }
 .socials {
-  background: #5393fd;
+  background: #679ffa;
 }
 li {
   list-style: none;
