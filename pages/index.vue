@@ -197,6 +197,12 @@ ul li {
 
 .link {
   font-size: 15px;
+  transition: 0.5s;
+  color: #00c58e;
+}
+
+.link:hover {
+  color: #00e0a1;
 }
 
 .about .box-img {

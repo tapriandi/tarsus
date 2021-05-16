@@ -1,8 +1,8 @@
 <template>
-  <header class="fixed-top bg-primary">
+  <header class="fixed-top">
     <b-navbar toggleable="lg" type="dark" variant="">
       <div class="container">
-      <b-navbar-brand to="/">Tarsus</b-navbar-brand>
+      <b-navbar-brand to="/" style="font-size: 24px">Tarsus</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -30,5 +30,19 @@
 <style>
   * {
     outline: none;
+  }
+
+  header {
+    background: linear-gradient(rgba(38, 118, 247, 0.6), transparent);
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+  }
+  .dropdown-menu {
+    border: none;
+    background: rgba(0, 197, 141, 0.5);
+  }
+  .dropdown-item {
+    color: white;
   }
 </style>
