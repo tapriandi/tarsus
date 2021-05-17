@@ -1,19 +1,13 @@
 <template>
-  <div class="w-full px-2 xs:mb-6 md:mb-12 article-card">
-    <NuxtLink
-      :to="`/blog/author/${author.name}`"
-      class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
-    >
-      <img
-        v-if="author.img"
-        class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
-        :src="author.img"
-      />
-      <div class="flex flex-col m-4">
-        <h4 class="font-semibold">Author</h4>
-
-        <p>{{ author.name }}</p>
-        <p>{{ author.bio }}</p>
+  <div class="py-4">
+    <NuxtLink :to="`/blog/author/${author.name}`" class="d-flex">
+      <div class="box-img">
+        <img v-if="author.img" style="width: 200px" :src="author.img" />
+      </div>
+      <div class="box-text pl-3 pl-md-4 py-2 flex-col align-items-center">
+        <h5 class="text-dark">Author</h5>
+        <p class="mb-2">by {{ author.name }}</p>
+        <p class="m-0">{{ author.bio }}</p>
       </div>
     </NuxtLink>
   </div>
@@ -24,8 +18,38 @@ export default {
   props: {
     author: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
+  },
+};
+</script>
+
+<style scoped>
+p {
+  font-size: 12px;
+  color: #212529;
+}
+.box-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 480px) {
+  .box-text {
+    width: 210px;
   }
 }
-</script>
+@media (max-width: 330px) {
+  .box-text {
+    width: 160px;
+  }
+}
+</style>

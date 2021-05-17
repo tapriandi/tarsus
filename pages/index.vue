@@ -38,7 +38,7 @@
     </div>
 
     <!-- about -->
-    <div class="about container px-4 py-5 my-5">
+    <div class="about container px-4 py-5 mt-5 mb-sm-5">
       <div class="row justify-content-center">
         <div class="col-sm box-img">
           <img
@@ -47,7 +47,7 @@
             style="width: 100%"
           />
         </div>
-        <div class="col-sm">
+        <div class="col-sm pt-5 pt-sm-0 px-sm-4">
           <h3 class="mb-3">Tarsus Merupakan</h3>
           <p class="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nisi
@@ -55,10 +55,17 @@
             quos!
           </p>
           <p class="mb-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, nam suscipit eius corporis cumque saepe reprehenderit exercitationem placeat eum consequuntur ipsam recusandae est possimus earum numquam ad! Hic, vel sed?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, nam
+            suscipit eius corporis cumque saepe reprehenderit exercitationem
+            placeat eum consequuntur ipsam recusandae est possimus earum numquam
+            ad! Hic, vel sed?
           </p>
-        
-          <NuxtLink to="/about" class="py-4 link">Baca selanjutnya ></NuxtLink>
+
+          <div class="d-flex justify-content-start">
+            <NuxtLink to="/about" class="p-4 link">
+              Lihat Lebih Banyak
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
@@ -73,17 +80,10 @@
 
       <ul class="d-flex flex-wrap justify-content-center">
         <li v-for="event of events" :key="event.slug" class="event-card">
-          <NuxtLink
-            :to="{ name: 'event-slug', params: { slug: event.slug } }"
-          >
-            <img
-              v-if="event.img"
-              :src="event.img"
-              class="rounded-sm"
-            />
+          <NuxtLink :to="{ name: 'event-slug', params: { slug: event.slug } }">
+            <img v-if="event.img" :src="event.img" class="rounded-sm" />
 
             <h3 class="title p-4 font-weight-bold">{{ event.title }}</h3>
-
 
             <div class="float">
               <h2 class="font-weight-bold">{{ event.title }}</h2>
@@ -97,7 +97,9 @@
       </ul>
 
       <div class="d-flex justify-content-center">
-        <NuxtLink to="/blog/all" class="p-4 link">Lihat Lebih Banyak ></NuxtLink>
+        <NuxtLink to="/blog/all" class="p-4 link">
+          Lihat Lebih Banyak
+        </NuxtLink>
       </div>
     </div>
 
@@ -111,16 +113,10 @@
           :key="article.slug"
           class="article-card"
         >
-          <NuxtLink
-            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-          >
-            <img
-              v-if="article.img"
-              class="rounded-sm"
-              :src="article.img"
-            />
+          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+            <img v-if="article.img" class="rounded-sm" :src="article.img" />
 
-            <div class="pb-3" >
+            <div class="pb-3">
               <h4 class="py-3">{{ article.title }}</h4>
               <p>by {{ article.author.name }}</p>
               <p>{{ article.description }}</p>
@@ -130,12 +126,12 @@
       </ul>
 
       <div class="d-flex justify-content-center">
-        <NuxtLink to="/blog/all" class="p-4 link">Lihat Lebih Banyak ></NuxtLink>
+        <NuxtLink to="/blog/all" class="p-4 link">Lihat Lebih Banyak </NuxtLink>
       </div>
     </div>
 
     <div class="d-flex py-5 justify-content-center bg-white">
-      <Donate  class="my-5"/>
+      <Donate class="my-5" />
     </div>
 
     <TheFooter />
@@ -199,13 +195,26 @@ ul li {
 }
 
 .link {
+  position: relative;
   font-size: 15px;
   transition: 0.5s;
   color: #00c58e;
+  margin-right: 15px;
+}
+
+.link:after {
+  position: absolute;
+  left: 94%;
+  content: "\1F862";
+  transition: 0.4s;
 }
 
 .link:hover {
   color: #00e0a1;
+}
+
+.link:hover:after {
+  left: 90%;
 }
 
 .about .box-img {
@@ -222,7 +231,6 @@ ul li {
   object-fit: cover;
   object-position: center;
 }
-
 
 .article-card {
   margin: 8px;
@@ -255,9 +263,6 @@ ul li {
 .article-card h4 {
   margin: 0;
 }
-
-
-
 
 .event-card {
   position: relative;
@@ -292,7 +297,7 @@ ul li {
   width: 100%;
   height: 100%;
   color: white !important;
-  transition: .5s;
+  transition: 0.5s;
   background: rgba(83, 148, 253, 0.5);
   align-items: center;
   flex-direction: column;
@@ -317,7 +322,7 @@ ul li {
   transition: 0.5s;
 }
 
-.event-card .float:hover~ .title {
+.event-card .float:hover ~ .title {
   opacity: 0 !important;
 }
 

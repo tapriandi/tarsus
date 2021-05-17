@@ -12,15 +12,15 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item to="/" class="px-lg-4">Home</b-nav-item>
-          <b-nav-item-dropdown text="Kegiatan" right class="px-lg-4">
+          <b-nav-item to="/" class="px-lg-3">Home</b-nav-item>
+          <b-nav-item-dropdown text="Kegiatan" right class="px-lg-3">
             <b-dropdown-item to="/event/all">Kegiatan 2021</b-dropdown-item>
             <b-dropdown-item href="" class="disabled">Sub Tarsus 2021</b-dropdown-item>
             <b-dropdown-item href="" class="disabled">Lomba 2021</b-dropdown-item>
             <b-dropdown-item href="" class="disabled">Pawai Obor 2019</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item to="/blog/all" class="pl-lg-4">Blog</b-nav-item>
-          <b-nav-item to="/about" class="pl-lg-4">Tentang</b-nav-item>
+          <b-nav-item to="/blog/all" class="px-lg-3">Blog</b-nav-item>
+          <b-nav-item to="/about" class="pl-lg-3">Tentang</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
       </div>
