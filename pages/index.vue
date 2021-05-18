@@ -5,34 +5,35 @@
     <!-- slider -->
     <div>
       <b-carousel
-        id="carousel-1"
+        id="carousel"
         v-model="slide"
         :interval="4000"
         fade
         controls
         indicators
         background="#ababab"
-        img-width="1024"
-        img-height="480"
         style="text-shadow: 1px 1px 2px #333"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
         <!-- Text slides with image -->
         <b-carousel-slide
-          caption="First slide"
+          caption="Selamat Hari Raya Idhul Fitri 1442 Hijriah"
           text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-          img-src="https://picsum.photos/1024/480/?image=52"
+          img-src="~/assets/images/home/banner-ramadhan-mubarak.jpg"
         ></b-carousel-slide>
 
-        <!-- Slides with custom text -->
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-          <h1>Hello world!</h1>
+        <b-carousel-slide
+          caption=""
+          text=" "
+          img-src="~/assets/images/home/banner-1.jpg"
+        >
         </b-carousel-slide>
 
-        <!-- Slides with image only -->
         <b-carousel-slide
-          img-src="https://picsum.photos/1024/480/?image=58"
+        caption="Pandemi Bukan Halangan Berkompetisi"
+        text="Suasana lomba cerdas cermat di Masjid Baiturahman Pakulaut"
+          img-src="~/assets/images/home/banner-lcc.jpg"
         ></b-carousel-slide>
       </b-carousel>
     </div>
@@ -42,9 +43,9 @@
       <div class="row justify-content-center">
         <div class="col-sm box-img">
           <img
-            src="https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            src="~/assets/images/home/banner-about.png"
             alt=""
-            style="width: 100%"
+            class="h-100"
           />
         </div>
         <div class="col-sm pt-5 pt-sm-0 px-sm-4">
@@ -70,8 +71,9 @@
       </div>
     </div>
 
-    <div class="d-flex py-5 justify-content-center">
-      <Donate class="my-4" />
+    <div id="donasi" class="d-flex my-5 justify-content-center">
+      <Donate />
+      <b-tooltip target="donasi" title="Cooming Soon"></b-tooltip>
     </div>
 
     <!-- Kegiatan -->
@@ -130,8 +132,9 @@
       </div>
     </div>
 
-    <div class="d-flex py-5 justify-content-center bg-white">
-      <Donate class="my-5" />
+    <div id="donasi-2" class="d-flex my-5 justify-content-center">
+      <Donate />
+      <b-tooltip target="donasi-2" title="Cooming Soon"></b-tooltip>
     </div>
 
     <TheFooter />
@@ -194,6 +197,26 @@ ul li {
   list-style: none;
 }
 
+.carousel-inner {
+  width: 100%;
+  height: 100vh;
+}
+.carousel-caption {
+  bottom: 80px;
+  width: fit-content;
+  left: 50%;
+  padding: 20px;
+  /* background: rgba(33, 37, 41, 0.2); */
+  transform: translateX(-50%);
+  /* box-shadow: 0 0 10px rgba(33, 37, 41, 0.2); */
+}
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
 .link {
   position: relative;
   font-size: 15px;
@@ -225,12 +248,6 @@ ul li {
   font-size: 15px;
 }
 
-.about .box-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 
 .article-card {
   margin: 8px;
@@ -324,6 +341,7 @@ ul li {
 
 .event-card .float:hover ~ .title {
   opacity: 0 !important;
+  display: none;
 }
 
 @media (max-width: 380px) {

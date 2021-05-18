@@ -10,7 +10,7 @@ author:
 tags: 
   - Pawai Obor
 ---
-## Pawai Obor
+### Wujud sykukur atas diraihnya kemenangan
 
 Kalimat takbir (الله أَكْبَر Allahu Akbar) berkumandang sebagai tanda kemenangan atas puasa satu bulan penuh dibulan Ramadhan. Kami masyarakat muslim merayakannya dengan sukacita. Bukan hanya menahan lapar dan dahaga melainkan melatih diri untuk sabar, lebih taat pada sang pencipta, saling berbagi dan masih banyak lainnya.
 
