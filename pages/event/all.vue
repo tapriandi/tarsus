@@ -12,8 +12,8 @@
             :to="{ name: 'event-slug', params: { slug: event.slug } }"
           >
             <img
-              v-if="event.img"
-              :src="event.img"
+              v-if="event.imgBanner"
+              :src="event.imgBanner"
               class="rounded-sm"
             />
 
@@ -42,7 +42,7 @@
 export default {
   async asyncData({ $content, params }) {
     const events = await $content("events", params.slug)
-      .only(["title", "description", "img", "slug", "author"])
+      .only(["title", "description", "imgBanner", "slug", "author"])
       .sortBy("createdAt", "desc")
       .fetch();
 
