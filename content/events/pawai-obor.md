@@ -1,8 +1,8 @@
 ---
 title: Pawai Obor
 description: Bertakbir dan berkeliling desa sambil membawa obor bersama-sama
-img: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
-alt: pawai obor desa pakulaut
+imgBanner: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
+altBanner: pawai obor desa pakulaut
 author: 
   name: Tapri Andi
   bio: sleep less

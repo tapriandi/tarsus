@@ -83,7 +83,7 @@
       <ul class="d-flex flex-wrap justify-content-center">
         <li v-for="event of events" :key="event.slug" class="event-card">
           <NuxtLink :to="{ name: 'event-slug', params: { slug: event.slug } }">
-            <img v-if="event.img" :src="event.img" class="rounded-sm" />
+            <img v-if="event.imgBanner" :src="event.imgBanner" class="rounded-sm" />
 
             <h3 class="title p-4 font-weight-bold">{{ event.title }}</h3>
 
@@ -150,7 +150,7 @@ export default {
       .limit(3)
       .fetch();
     const events = await $content("events", params.slug)
-      .only(["title", "description", "img", "slug", "author"])
+      .only(["title", "description", "imgBanner", "slug", "author"])
       .sortBy("createdAt", "desc")
       .limit(4)
       .fetch();
