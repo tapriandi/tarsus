@@ -1,6 +1,5 @@
 <template>
   <div class="homepage">
-    <TheHeader />
 
     <!-- slider -->
     <div>
@@ -137,7 +136,6 @@
       <b-tooltip target="donasi-2" title="Cooming Soon"></b-tooltip>
     </div>
 
-    <TheFooter />
   </div>
 </template>
 

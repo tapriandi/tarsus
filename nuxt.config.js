@@ -41,6 +41,8 @@ export default {
     '@nuxt/content',
   ],
 
+  router: {},
+
   
   content: {
     markdown: {
