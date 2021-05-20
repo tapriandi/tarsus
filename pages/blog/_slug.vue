@@ -1,7 +1,6 @@
 <template>
-  <article class="blog-detail row m-0 mb-5">
+  <article class="blog-detail row m-0">
     <div class="banner col-lg">
-      
       <img :src="article.img" :alt="article.alt" class="w-100 h-100" />
       <!-- <div class="overlay"></div> -->
       <!-- <div class="banner-content position-absolute text-white">
@@ -31,10 +30,9 @@
           </a>
         </div>
       </div> -->
-   
     </div>
 
-    <div class="content relative col-lg pl-4 pr-4 pr-lg-5 mt-4">
+    <div class="content relative col-lg pl-4 pr-4 pr-lg-5 my-4">
       <h1 class="font-weight-bold pb-2">{{ article.title }}</h1>
       <p>{{ article.description }}</p>
       <p class="pb-4">Post last updated: {{ formatDate(article.updatedAt) }}</p>
@@ -106,7 +104,6 @@ export default {
 <style scoped>
 .blog-detail {
   position: relative;
-  overflow-x: hidden;
 }
 .blog-detail .banner {
   position: sticky;
@@ -128,4 +125,9 @@ p {
   padding: 0;
 }
 
+@media (max-width: 1023px) {
+  .blog-detail .banner {
+    position: relative;
+  }
+}
 </style>

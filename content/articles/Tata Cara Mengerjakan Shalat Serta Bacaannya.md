@@ -10,7 +10,7 @@ author:
 tags: 
   - web development
 ---
-1. Berdiri tegak menghadap kiblat dan sambil mengucap niat untuk mengerjakan shalat. Niat shalat adalah sesuai dengan shalat yang sedang dikerjakan;
+**1. Berdiri tegak menghadap kiblat dan sambil mengucap niat untuk mengerjakan shalat. Niat shalat adalah sesuai dengan shalat yang sedang dikerjakan**
 
 Niat Shalat Subuh :
 “Ushalli fardhas subhi rak’ataini mustqbilal qiblati adaa-an (ma’mumam/imaaman) lillaahi ta’aalaa. Allaahu akbar.”
@@ -47,15 +47,10 @@ Artinya:
 
 “Aku niat shalat fardhu ‘isya empat raka’at menghadap kiblat (sebagai ma’mum/sebagai imam) karena Allah Ta’ala. Allah Maha Besar.”
 
-Baca juga :
 
-Manfaat Shalat Tarawih
-Fadhilah Tarawih Setiap Malam
-Shalat Tarawih bagi Wanita
-Shalat Lailatul Qadar
-2. Kemudian takbiratul ihram (mengangkat kedua tangan sambil membaca: Allaahu akbar (Allah Maha Besar).
+**2. Kemudian takbiratul ihram (mengangkat kedua tangan sambil membaca: Allaahu akbar (Allah Maha Besar).**
 
-3. Kemudian kedua tangan disedekapkan pada dada dan membaca do’a iftitah:
+**3. Kemudian kedua tangan disedekapkan pada dada dan membaca do’a iftitah:**
 
 للهُ اَكْبَرْ كَبِيْرًا وَالْحَمْدُ ِللهِ كَثِيْرً وَسُبْحَانَ اللهِ بُكْرَةً وَأَصِيْلاً. أِنِّ وَجَّهْةُ وَجْهِيَ ِللذِيْ فَطَرَالسَّمَوَاتِ وَاْلآَرْضَ حَنِيِيْفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِيْنَ. إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمْحْيَايَ وَمَمَاتِيْ ِللهِ رَبِّ الْعَالَمِيْنَ. لاَشَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ
 
@@ -78,7 +73,7 @@ Artinya:
 
 Dilanjutkan dengan membaca salah satu surah pendek atau ayat-ayat dalam Al-Qur’an.
 
-4. Ruku’
+**4. Ruku’**
 
 Selesai membaca surat, lalu kedua tangan diangkat setinggi telinga dan membaca Allaahu akbar, kemudian badan dibungkukkan, kedua tangan memegang lutut dan  ditekankan. Usahakan antara punggung dan kepala supaya rata. Setelah sempurna, kemudian membaca:
 
@@ -88,7 +83,7 @@ Artinya:
 
 “Maha Suci Tuhanku Yang Maha Agung serta memujilah aku kepada-Nya.” (3x)
 
-5. I’tidal
+**5. I’tidal**
 
 Setelah ruku’, kemudian bangkit tegak dengan mengangkat kedua tangan setinggi telinga sambil membaca:
 
@@ -106,7 +101,7 @@ Artinya:
 
 “Ya Allah Tuhan Kami. Bagi-Mu segala puji, sepenuh langit dan bumi dan sepenuh barang yang Engkau kehendaki sesudah itu.”
 
-6. Sujud
+**6. Sujud**
 
 Selesai I’tidal lalu sujud; dengan meletakkan dahi di alas shalat. Ketika turun, yaitu dari berdiri i’tidal ke sujud sambil memabca Allahuu akbar. Dan saat sujud membaca tasbih:
 
@@ -116,7 +111,7 @@ Artinya:
 
 “Maha Suci Allah, serta memujilah aku kepada-Nya.”
 
-7. Duduk di antar dua Sujud
+**7. Duduk di antar dua Sujud**
 
 Setelah sujud lalu bangun untuk duduk sambil membaca Allaahu akbar, dan saat duduk membaca:
 
@@ -126,11 +121,11 @@ Artinya:
 
 “Ya Allah, ampunilah dosaku, belas kasihanilah aku dan angkatlah derajatku dan ebrilah rezeki kepadaku, dan berilah aku petunjuk, dabn berilah kesehatan bagiku dan berilah ampunan kepadaku.”
 
-8. Sujud Kedua
+**8. Sujud Kedua**
 
 Sujud kedua, ketiga, dan keempat dikerjakan seperti sujud pertama baik cara maupun bacaannya.
 
-9. Tasyahud Awal
+**9. Tasyahud Awal**
 
 Pada raka’at kedua (jika kita Shalat kecuali shalat Subuh), kita duduk membentuk tasyahud awal dengan sikap kaki kanan tegak dan kaki kiri diduduki sambil membaca tasyahud awal:
 
@@ -152,7 +147,8 @@ Hukum Shalat Tarawih Sendirian
 Shalat Fardhu
 Shalat Witir
 Shalat Jum’at
-10. Tahiyatul Akhir
+
+**10. Tahiyatul Akhir**
 
 Cara duduknya; usahakan pantat menempel di alas shalat dan kaki kiri dimasukkan ke bawah kaki kanan. Jari-jari kaki kanan tetap menekan ke kiri alas shalat. Bacaan tahiyat akhir sama seperti bacaan tahiyat awal ditambah dengan bacaan berikut ini:
 
@@ -172,7 +168,7 @@ Artinya:
 
 “Sebagaimana pernah Engkau beri rahmat kepada Nabi Ibrahim dan keluarganya. Dan limpahilah berkah atas Nabi Muhammad beserta para keluarganya. Sebagaimana Engkau memberi berkah kepada Nabi Ibrahim beserta keluarganya. Di seluruh alam semesta Engkaulah Yang Terpuji dan Maha Mulia.”
 
-11. Salam
+**11. Salam**
 
 Selesai tahiyat akhir, kemudia salam dengan menengok ke kanan dan ke kiri sambil membaca:
 
