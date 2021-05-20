@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="event">
+    <div class="sub">
       <div class="banner">
-        <img :src="event.imgBanner" :alt="event.altBanner" />
+        <img :src="sub.imgBanner" :alt="sub.altBanner" />
         <div class="text">
-          <h1>{{ event.title }}</h1>
-          <p>{{ event.description }}</p>
+          <h1>{{ sub.title }}</h1>
+          <p>{{ sub.description }}</p>
         </div>
 
         <div class="path">
@@ -13,8 +13,8 @@
         </div>
       </div>
       <div class="container px-4 py-5 my-5">
-        <p class="mb-4">Update: {{ formatDate(event.updatedAt) }}</p>
-        <nuxt-content :document="event" />
+        <p class="mb-5">Update: {{ formatDate(sub.updatedAt) }}</p>
+        <nuxt-content :document="sub" />
       </div>
 
       <div class="">
@@ -29,14 +29,14 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const event = await $content("events", params.slug).fetch();
-    const [prev, next] = await $content("events")
+    const sub = await $content("subs", params.slug).fetch();
+    const [prev, next] = await $content("subs")
       .only(["title", "slug"])
       .sortBy("createdAt", "asc")
       .surround(params.slug)
       .fetch();
     return {
-      event,
+      sub,
       prev,
       next,
     };
@@ -52,7 +52,10 @@ export default {
 
 
 <style scopped>
-.event {
+h2 {
+  margin-bottom: 20px;
+}
+.sub {
   position: relative;
   min-height: 90vh;
 }

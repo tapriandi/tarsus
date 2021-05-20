@@ -1,7 +1,5 @@
 <template>
   <div class="blog-all">
-    <TheHeader />
-
     <!-- article -->
     <div class="container py-5 my-5">
       <h1 class="font-weight-bold p-5 text-center">Artikel dan Berita</h1>
@@ -30,9 +28,6 @@
         </li>
       </ul>
     </div>
-
-    <TheFooter />
-
   </div>
 </template>
 
@@ -55,7 +50,7 @@ export default {
 
 <style scoped>
 .blog-all {
-  height: 90vh;
+  min-height: 90vh;
 }
 ul {
   margin: 0;

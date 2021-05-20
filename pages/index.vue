@@ -1,6 +1,5 @@
 <template>
   <div class="homepage">
-
     <!-- slider -->
     <div>
       <b-carousel
@@ -30,8 +29,8 @@
         </b-carousel-slide>
 
         <b-carousel-slide
-        caption="Pandemi Bukan Halangan Berkompetisi"
-        text="Suasana lomba cerdas cermat di Masjid Baiturahman Pakulaut"
+          caption="Pandemi Bukan Halangan Berkompetisi"
+          text="Suasana lomba cerdas cermat di Masjid Baiturahman Pakulaut"
           img-src="~/assets/images/home/banner-lcc.jpg"
         ></b-carousel-slide>
       </b-carousel>
@@ -41,11 +40,7 @@
     <div class="about container px-4 py-5 mt-5 mb-sm-5">
       <div class="row justify-content-center">
         <div class="col-sm box-img">
-          <img
-            src="~/assets/images/home/banner-about.png"
-            alt=""
-            class="h-100"
-          />
+          <img src="~/assets/images/home/banner-about.png" alt="" />
         </div>
         <div class="col-sm pt-5 pt-sm-0 px-sm-4">
           <h3 class="mb-3">Tarsus Merupakan</h3>
@@ -75,22 +70,20 @@
       <b-tooltip target="donasi" title="Cooming Soon"></b-tooltip>
     </div>
 
-    <!-- Kegiatan -->
+    <!-- Sub -->
     <div class="container">
-      <h2 class="font-weight-bold p-5 text-center">Kegiatan Tarsus</h2>
+      <h2 class="font-weight-bold p-5 text-center">Sub Tarsus</h2>
 
       <ul class="d-flex flex-wrap justify-content-center">
-        <li v-for="event of events" :key="event.slug" class="event-card">
-          <NuxtLink :to="{ name: 'event-slug', params: { slug: event.slug } }">
-            <img v-if="event.imgBanner" :src="event.imgBanner" class="rounded-sm" />
-
-            <h3 class="title p-4 font-weight-bold">{{ event.title }}</h3>
+        <li v-for="sub of subs" :key="sub.slug" class="sub-card">
+          <NuxtLink :to="{ name: 'sub-slug', params: { slug: sub.slug } }">
+            <img v-if="sub.imgBanner" :src="sub.imgBanner" class="rounded-sm" />
 
             <div class="float">
-              <h2 class="font-weight-bold">{{ event.title }}</h2>
+              <h3 class="font-weight-bold text-center">{{ sub.title }}</h3>
               <p>2020</p>
               <p class="desc">
-                {{ event.description }}
+                {{ sub.description }}
               </p>
             </div>
           </NuxtLink>
@@ -100,6 +93,25 @@
       <div class="d-flex justify-content-center">
         <NuxtLink to="/blog/all" class="p-4 link">
           Lihat Lebih Banyak
+        </NuxtLink>
+      </div>
+    </div>
+
+    <!-- kegiatan -->
+    <div class="container my-5">
+      <h2 class="font-weight-bold p-5 text-center">Kegiatan Tarsus</h2>
+      <div class="row">
+        <NuxtLink to="/event/lomba" class="col-sm p-0 m-3 card-event">
+          <img src="~/assets/images/home/banner-lcc.jpg" alt="" />
+          <div class="float">
+            <h3 class="font-weight-bold text-white">Lomba Tarsus</h3>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/event/pawai-obor" class="col-sm p-0 m-3 card-event">
+          <img src="~/assets/images/home/banner-lcc.jpg" alt="" />
+          <div class="float">
+            <h3 class="font-weight-bold text-white">Pawai Obor</h3>
+          </div>
         </NuxtLink>
       </div>
     </div>
@@ -131,11 +143,12 @@
       </div>
     </div>
 
-    <div id="donasi-2" class="d-flex my-5 justify-content-center">
+    <div id="donasi-2" class="d-flex mt-5 pb-5 justify-content-center">
       <Donate />
       <b-tooltip target="donasi-2" title="Cooming Soon"></b-tooltip>
     </div>
-
+    <br />
+    <br />
   </div>
 </template>
 
@@ -147,7 +160,7 @@ export default {
       .sortBy("createdAt", "desc")
       .limit(3)
       .fetch();
-    const events = await $content("events", params.slug)
+    const subs = await $content("subs", params.slug)
       .only(["title", "description", "imgBanner", "slug", "author"])
       .sortBy("createdAt", "desc")
       .limit(4)
@@ -158,7 +171,7 @@ export default {
       .fetch();
     return {
       articles,
-      events,
+      subs,
       tags,
     };
   },
@@ -180,7 +193,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 body {
   overflow-x: hidden;
 }
@@ -238,14 +251,20 @@ ul li {
   left: 90%;
 }
 
-.about .box-img {
-  height: 400px;
+.about .box-img img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 680px) {
+  .about .box-img img {
+    width: 100%;
+  }
 }
 
 .about p {
   font-size: 15px;
 }
-
 
 .article-card {
   margin: 8px;
@@ -279,21 +298,21 @@ ul li {
   margin: 0;
 }
 
-.event-card {
+.sub-card {
   position: relative;
   margin: 8px;
-  max-width: 480px;
+  max-width: 240px;
 }
 
-.event-card a:hover {
+.sub-card a:hover {
   text-decoration: none;
 }
 
-.event-card a:hover img {
+.sub-card a:hover img {
   transform: scale(1.005);
 }
 
-.event-card img {
+.sub-card img {
   position: relative;
   width: 100%;
   height: 320px;
@@ -303,10 +322,9 @@ ul li {
   object-position: center;
 }
 
-.event-card .float {
+.sub-card .float {
   position: absolute;
   display: flex;
-  opacity: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -319,31 +337,83 @@ ul li {
   justify-content: center;
 }
 
-.event-card .float:hover {
-  opacity: 1;
+.sub-card .float h3 {
+  padding-top: 70%;
+  transition: 0.5s;
 }
 
-.event-card .float .desc {
+.sub-card .float p {
+  display: none;
+  transition: 0.5s;
+}
+
+.sub-card .float:hover p {
+  display: block;
+}
+
+.sub-card .float:hover h3 {
+  padding-top: 0;
+}
+
+.sub-card .float .desc {
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
 
-.event-card .title {
-  position: absolute;
-  bottom: 0;
-  opacity: 1;
-  color: white;
-  transition: 0.5s;
-}
-
-.event-card .float:hover ~ .title {
+.sub-card .float:hover ~ .title {
   opacity: 0 !important;
   display: none;
 }
 
+
+
+.card-event {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  border-radius: 5px;
+}
+.card-event img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+  object-position: center;
+}
+.card-event .float {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-event .float h3 {
+  position: relative;
+  top: 80%;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(-50%);
+}
+.card-event:hover img {
+  transform: scale(1.01);
+}
+.card-event:hover .float {
+  background: rgba(83, 148, 253, 0.5);
+}
+.card-event:hover .float h3 {
+  top: 50%;
+}
+
+@media (max-width: 480px) {
+  .sub-card {
+    max-width: 300px;
+  }
+}
 @media (max-width: 380px) {
-  .event-card img {
+  .sub-card img,
+  .card-event img {
     height: 260px;
   }
 }

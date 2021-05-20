@@ -1,15 +1,15 @@
 ---
-title: Pawai Obor
-description: Bertakbir dan berkeliling desa sambil membawa obor bersama-sama
-imgBanner: https://images.unsplash.com/photo-1580752300992-559f8e0734e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80
-altBanner: pawai obor desa pakulaut
-author: 
-  name: Tapri Andi
-  bio: sleep less
-  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
-tags: 
-  - Pawai Obor
+title: Tarsus Sub 2
+year: 2021
+description: Learning how to use @nuxt/content to create a blog again
+imgBanner: https://images.unsplash.com/photo-1588336271629-1704e27ef8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2158&q=80
+altBanner: nice image
+Ketua: 
+  Sub: Choi
+  anggota: lorem, lorem, lorem
 ---
+
+
 ## Pawai Obor
 
 Kalimat takbir (الله أَكْبَر Allahu Akbar) berkumandang sebagai tanda kemenangan atas puasa satu bulan penuh dibulan Ramadhan. Kami masyarakat muslim merayakannya dengan sukacita. Bukan hanya menahan lapar dan dahaga melainkan melatih diri untuk sabar, lebih taat pada sang pencipta, saling berbagi dan masih banyak lainnya.
