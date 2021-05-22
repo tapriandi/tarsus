@@ -5,7 +5,7 @@
         <!-- <b-nav-item to="/" class="px-lg-4">Instagram</b-nav-item>
         <b-nav-item to="/" class="px-lg-4">Facebook</b-nav-item> -->
         <p class="text-white">Follow us on </p>
-        <b-nav-item to="/" class="px-2">Instagram</b-nav-item>
+        <a href="https://www.instagram.com/tarsuspakulaut/" target="_blank" class="px-2">Instagram</a>
       </div>
     </div>
     <div class="container py-3">

@@ -17,6 +17,7 @@
             <b-dropdown-item href="/sub/all">Sub Tarsus</b-dropdown-item>
             <b-dropdown-item href="/event/lomba">Lomba Tarsus</b-dropdown-item>
             <b-dropdown-item href="/event/pawai-obor">Pawai Obor</b-dropdown-item>
+            <b-dropdown-item href="" class="disabled">Struktur Kepengurusan</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item to="/blog/all" class="px-lg-3">Blog</b-nav-item>
           <b-nav-item to="/about" class="pl-lg-3">Tentang</b-nav-item>

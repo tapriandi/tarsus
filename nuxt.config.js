@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tarsus',
+    title: 'Tarsus | Official Website',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,9 +18,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // CSS file in the project
-    // '~/assets/css/main.css',
-    // SCSS file in the project
-    // '~/assets/css/main.scss'
+    // '~assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,10 +34,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxt/content',
+    // '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    // scss: ['.~/assets/scss/*.scss']
+  },
 
   router: {},
 

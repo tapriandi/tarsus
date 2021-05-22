@@ -18,8 +18,10 @@
     "prism-themes": "^1.7.0"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "fibers": "^5.0.0",
+    "node-sass": "^6.0.0",
     "sass": "^1.32.13",
-    "sass-loader": "10"
+    "sass-loader": "^11.1.1"
   }
 }

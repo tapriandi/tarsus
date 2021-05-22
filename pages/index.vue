@@ -9,6 +9,7 @@
         fade
         controls
         indicators
+        img-height="480"
         background="#ababab"
         style="text-shadow: 1px 1px 2px #333"
         @sliding-start="onSlideStart"
@@ -67,7 +68,7 @@
 
     <div id="donasi" class="d-flex my-5 justify-content-center">
       <Donate />
-      <b-tooltip target="donasi" title="Cooming Soon"></b-tooltip>
+      <b-tooltip target="donasi" title="Coming Soon"></b-tooltip>
     </div>
 
     <!-- Sub -->
@@ -145,7 +146,7 @@
 
     <div id="donasi-2" class="d-flex mt-5 pb-5 justify-content-center">
       <Donate />
-      <b-tooltip target="donasi-2" title="Cooming Soon"></b-tooltip>
+      <b-tooltip target="donasi-2" title="Coming Soon"></b-tooltip>
     </div>
     <br />
     <br />
